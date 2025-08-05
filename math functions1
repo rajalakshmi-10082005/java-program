@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double x = sc.nextDouble(); // 76.78
+        int a = sc.nextInt();       // 16
+        int b = sc.nextInt();       // 2
+        int c = sc.nextInt();       // 3
+
+     
+        System.out.println((int)x);
+
+     
+        System.out.println((int)Math.ceil(x));
+
+      
+        double result = (double)a / (b + c);
+        System.out.println((int)Math.ceil(result));
+
+     
+        System.out.println(a / b);
+
+        sc.close();
+    }
+}
