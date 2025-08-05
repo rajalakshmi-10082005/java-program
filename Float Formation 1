@@ -1,0 +1,21 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Scanner;
+
+public class FormatDoubleCustom {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double value = sc.nextDouble();
+        sc.close();
+
+      
+        BigDecimal bdExact = new BigDecimal(Double.toString(value));
+
+        BigDecimal rounded6 = bdExact.setScale(6, RoundingMode.HALF_UP);
+
+        System.out.println(rounded6.toPlainString());
+        System.out.println(String.format("%.4f", value));
+        System.out.println(String.format("%.2f", value));
+        System.out.println(String.format("%.0f", value));
+    }
+}
