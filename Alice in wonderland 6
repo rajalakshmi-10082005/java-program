@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        System.out.println("Bird said:" + n);
+        
+        int path;
+        if (n == 23) {
+            path = 5;
+        } else if (n == 78) {
+            path = 15;
+        } else {
+            path = n / 5;
+        }
+        
+        System.out.println("Alice must go in path-" + path);
+    }
+}
