@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+
+        try {
+            int number = Integer.parseInt(input);
+
+            if (number < 0) {
+                System.out.println("Invalid Input");
+            } else {
+           
+                String reversed = new stringbuilder(input).reverse().toString();
+                System.out.println(reversed);
+            }
+        } catch (NumberFormatException e) {
+           
+            System.out.println("Invalid Input");
+        }
+    }
+}
