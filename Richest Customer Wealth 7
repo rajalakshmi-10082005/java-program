@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class RichestCustomerWealth {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int m = sc.nextInt(); 
+        int n = sc.nextInt(); 
+        int maxWealth = 0;
+        for (int i = 0; i < m; i++) {
+            int currentSum = 0;
+            for (int j = 0; j < n; j++) {
+                currentSum += sc.nextInt();
+            }
+            if (currentSum > maxWealth) {
+                maxWealth = currentSum;
+            }
+        }
+        System.out.println("Richest Customer Wealth is " + maxWealth);
+        sc.close();
+    }
+}
