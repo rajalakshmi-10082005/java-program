@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class SumCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        if (n >= 1 && n <= 10) {
+            int sum = 0;
+            for (int i = 1; i <= n; i++) {
+                sum += i;
+            }
+            System.out.printf("The sum of numbers from 1 to %d : %04d\n", n, sum);
+        } else {
+            System.out.println("Enter a Valid Input!!!!!!!!!!!!!!!!!!");
+        }
+    }
+}
