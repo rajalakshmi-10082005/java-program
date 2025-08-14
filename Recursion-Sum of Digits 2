@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class DigitSumChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        if (number >= 100 && number <= 999) {
+            int sum = 0;
+            int temp = number;
+            while (temp > 0) {
+                sum += temp % 10;
+                temp /= 10;
+            }
+            System.out.printf("Sum of Digit:%04d\n", sum);
+        } else {
+            System.out.println("Enter a Valid Input!!!!!!!");
+        }
+    }
+}
