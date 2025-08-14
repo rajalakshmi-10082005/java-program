@@ -1,0 +1,10 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        number = Math.abs(number);
+        int digitCount = String.valueOf(number).length();
+        System.out.println("The Count the digits: " + digitCount);
+    }
+}
